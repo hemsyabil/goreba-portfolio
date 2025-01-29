@@ -1,0 +1,9 @@
+Flask
+Flask-SQLAlchemy
+Flask-Login
+Flask-WTF
+pandas
+requests
+plotly
+python-dotenv
+gunicorn

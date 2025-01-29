@@ -1,0 +1,31 @@
+goreba-portfolio/
+├── app/
+│   ├── __init__.py             # Flask application factory and extensions initialization
+│   ├── config.py               # Configuration settings for different environments
+│   ├── routes/
+│   │   ├── auth.py             # Authentication routes (login, register, logout)
+│   │   ├── main.py             # Core routes (dashboard, home, combined portfolio)
+│   │   ├── portfolios.py       # Portfolio management routes (create, update, delete)
+│   │   └── blog.py             # Blog routes (posts, tutorials, learning materials)
+│   ├── models/
+│   │   ├── user.py             # User model with authentication fields
+│   │   ├── portfolio.py        # Portfolio model with user relationship
+│   │   └── transaction.py      # Transaction model for stock buys/sells
+│   ├── templates/
+│   │   ├── base.html           # Base template with common layout
+│   │   ├── auth/               # Authentication templates
+│   │   ├── dashboard/          # Dashboard views and widgets
+│   │   ├── portfolio/          # Portfolio management templates 
+│   │   └── blog/               # Blog post templates
+│   ├── static/
+│   │   ├── css/                # Custom CSS and framework files
+│   │   ├── js/                 # Custom JavaScript and charting scripts
+│   │   └── images/             # Static images and icons
+│   ├── utilities/
+│   │   ├── stock_api.py        # Stock data fetching from free APIs
+│   │   ├── data_processor.py   # Portfolio calculations and analytics
+│   │   └── file_handler.py     # CSV upload processing and validation
+│   └── instance/
+│       └── app.db              # SQLite database file (dev environment)
+├── requirements.txt            # Python dependencies list
+└── run.py                      # Application entry point
